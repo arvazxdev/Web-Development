@@ -3,8 +3,13 @@ Add MP3 files in the parent folder 'Media Elements' to enjoy them on your webpag
 ```
 1.mp3, 2.mp3, 3.mp3, 4.mp3, 5.mp3
 ```
+## Video 
+Add MP4 files in the parent folder 'Media Elements' to enjoy them on your webpage.
+```
+1.mp4, 2.mp4, 3.mp4, 4.mp4, 5.mp4
+```
 
-## Embed Online Video - <iframe>
+## Embed Online Video - &lt;iframe&gt;
 You have to go to 'www.youtube.com' and copy the embed code
 <br>
 ### Here how you can do it exactly:

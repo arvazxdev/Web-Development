@@ -1,0 +1,20 @@
+.d{
+    background-color: green;
+}
+#second{
+    background-color: rgb(255, 0, 0);
+}
+#first{
+    color: aqua;
+    background-color: blue;
+}
+.f{
+
+    color: aqua;
+}
+body{
+    background-color: aqua;
+}
+h3{
+    color: #e90000;
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Know More About CSS Selectors through CSS Code">
+    <title>More Details About CSS Selectors</title>
+    <style>
+        /* Class Selector */
+        .red {
+            background-color: red;
+            color: white;
+        }
+
+        .p1 {
+            height: 50px;
+        }
+
+        .p2 {
+            height: 50px;
+            box-sizing: border-box;
+        }
+
+        /* ID Selector */
+        #blue {
+            background-color: blue;
+            color: white;
+        }
+
+        /* Universal Selector */
+        * {
+            margin-top: 30px;
+            padding: 10px;
+        }
+
+        /* Child Selector */
+        div>p {
+            color: yellow;
+        }
+
+        p:first-child {
+            color: aqua;
+        }
+
+
+        /* Descendant Selector */
+        div p {
+            color: yellow;
+        }
+
+        /* Pseudo Selector */
+        a {
+            color: gray;
+        }
+
+        a:active {
+            background-color: rgb(255, 0, 0);
+        }
+
+        a:hover {
+            color: rgb(0, 0, 255);
+        }
+    </style>
+</head>
+
+<body bgcolor="greenyellow">
+    <div class="red">I am a div
+        <span>
+            <main>
+                <p>I am a indirect para under para in div</p>
+            </main>
+        </span>
+        <p>I am a direct para in div</p>
+    </div>
+    <div id="blue">I am another div</div>
+    <div style="background-color: rgb(30, 96, 0);">
+        <p class="p1">I am first child of my parent</p>
+        <p class="p2">I am second child of my parent</p>
+    </div>
+    <br>
+    <pre style="font-family: none; font-size: 10mm;">Note: Read the CSS code to understand the program in better way
+          Pseudo Selector is not only uses for anchor text</pre>
+    <br>
+    <center> <a style="font-size: 10mm;" href="Main.html">&lt;&lt; Jump to Main Page</a></center>
+
+</body>
+
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Important Ponints About CSS Specifity & Cascade">
+    <title>CSS Specifity & Cascade</title>
+    <style>
+        .aqua {
+            color: aqua;
+        }
+
+        .blue {
+            background-color: blue;
+            color: greenyellow;
+        }
+
+        .red {
+            color: greenyellow;
+            background-color: red;
+        }
+
+        .cblue {
+            color: blue;
+        }
+
+        a:hover{
+            color: rgb(0, 0, 181);
+        }
+        a{
+            color: gray;
+        }
+    </style>
+</head>
+
+<body bgcolor="greenyellow">
+    <center>
+        <h3 style="color: blue;">Important Points About CSS Specifity & Cascade</h3>
+    </center>
+    <ol style="background-color: rgb(174, 0, 255);">
+        <li class="aqua">
+            <h4>The Cascade Algorithm: The Cascade is an algorithm to solve conflicts where multiple CSS rules apply to
+                an HTML element.</h4>
+        </li>
+        <li style="margin-top: -4mm;" class="aqua">
+            <h4>Specifity Calculation: An algorithm that determines the strongest and weakest match.</h4>
+        </li>
+        <li style="margin-top: -4mm;" class="aqua">
+            <h4>Effect of Position: The order in which CSS rule appears.</h4>
+        </li>
+        <li style="margin-top: -4mm;" class="aqua">
+            <h4>Origin: The styles that are defaultally applied by browser.</h4>
+        </li>
+    </ol>
+    <h4 class="cblue">The Cascade Algorithm</h4>
+    <ul class="red">
+        <li>If &nbsp;'!Important' keyword added in any property (before semicolon';' of the property) , 10,000 specifity
+            added to the selector</li>
+    </ul>
+    <ul class="blue">
+        <li>The overwritted property written in CSS programme is apply based on highest specifity</li>
+    </ul>
+    <h4 class="cblue">Specifity Calculation</h4>
+    <ul class="blue">
+        <li>The Specifity of universal selector is '0'</li>
+    </ul>
+    <ul class="red">
+        <li>The Specifity of element selector and pseudo-element are '1'</li>
+    </ul>
+    <ul class="blue">
+        <li>The Specifity of class selector, attribute selector and psedo class are '10'</li>
+    </ul>
+
+    <ul class="red">
+        <li>The Specifity of ID selector is '100'</li>
+    </ul>
+
+    <ul class="blue">
+        <li>The Specifity of inline style is '1000'</li>
+    </ul>
+    <h4 class="cblue">Effect of Position</h4>
+    <ul class="red">
+        <li>If the specifity of the many selectors is equal, the property appear which is written at last and last in
+            the CSS programme</li>
+    </ul>
+
+    <h4 class="cblue">Origin</h4>
+    <ul class="red">
+        <li>Some of styles automatically applied by browser</li>
+    </ul><br><br><br><br>
+    <center><a style="font-size: 10mm" href="CSS Specifity & Cascade(more).html">More Detail >></a></center>
+</body>
+
+</html>

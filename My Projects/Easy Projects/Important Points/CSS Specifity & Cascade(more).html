@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* This type of selector has 1 specifity */
+        
+        h4{
+            color: yellow;
+        }
+
+        /* This type of selector has 10 + 10,000 = 10,010 specifity */
+        .red{
+            color: red !important;font-size:xx-large
+        }
+
+        /* This type of selector has 10 specifity */
+        .green{
+            color: green;
+        }
+
+        /* This type of selector has 10 specifity */
+        
+        .red{
+            color: green;
+        }
+
+        /* This type of selector has 100 specifity */
+        #purple{
+            color: purple;
+        }
+        
+        /* This type of selector has 0 specifity */
+        *{
+            color: blueviolet;
+        }
+
+        /* This type of selector has 10 specifity */
+        [data-y=b]{
+            color: aqua;
+        }
+
+        /* This type of selector has 10 + 1 = 11 specifity */
+        h4.green{
+            color: green;
+        }
+        
+        /* Q.What is the specifity of this selector?
+        Ans.- 121 */
+        p.violet#indigo[href]{
+            color: blue;
+            font-size:xx-large;
+        }
+        
+
+        a {
+            color: gray;
+        }
+
+        a:active {
+            background-color: rgb(255, 0, 0);
+        }
+
+        a:hover {
+            color: rgb(0, 0, 255);
+        }
+    </style>
+</head>
+<body bgcolor="greenyellow">
+    <h4 data-y="b" id="purple" class="red green blue"style="font-weight: 100;">I am a 4<span style="color:rgb(255, 0, 0);font-size: x-large;">th</span> heading</h4>
+    <p href class="violet" id="indigo">I am a para</p><br>
+    <pre style="font-family: none; font-size: 5mm;">Note: Read the CSS code to understand the program in better way</pre><br>
+    <center> <a style="font-size: 5mm;" href="Main.html">&lt;&lt; Jump to Main Page</a></center>
+</body>
+</html>

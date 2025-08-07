@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Overflow Property</title>
+    <style>
+        .div1 {
+            border: 3px solid rgb(0, 0, 0);
+            white-space: nowrap;
+            overflow: scroll auto;
+            width: 60%;
+            height: 20mm;
+        }
+
+        .div2 {
+            border: 3px solid black;
+            overflow: hidden auto;
+            margin-top: 10px;
+            width: 40%;
+            height: 30mm;
+        }
+
+        .div3 {
+            border: 3px solid black;
+            text-overflow: clip;
+            overflow-y: hidden;
+            overflow-x: scroll;
+            margin-top: 10px;
+            width: 40%;
+            height: 30mm;
+            position: relative;
+        }
+
+        .p {
+            margin-top: 20px;
+            visibility: hidden;
+        }
+
+        a:focus~.div3 {
+            display: none;
+
+        }
+
+        a:focus~.p {
+            visibility: visible;
+        }
+        
+        a:focus~.a1 {
+            visibility: visible;
+        }
+    
+
+        .a {
+            position: absolute;
+            top: 350px;
+        }
+        
+        .a1 {
+            position: absolute;
+            top: 300px;
+            visibility: hidden;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="div1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel optio voluptas, quas earum
+        consequuntur praesentium alias quisquam ipsa vero quod ducimus eaque eligendi quos aut, ullam saepe assumenda.
+        Iure aliquam expedita nostrum molestiae eaque minima in labore, quaerat tenetur blanditiis porro dignissimos
+        quod rerum asperiores assumenda pariatur quia beatae nisi facere est nihil optio facilis. Laborum sequi tempora
+        a dignissimos dicta. Necessitatibus quos aliquam facere voluptates. Facere.</div>
+    <div class="div2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel optio voluptas, quas earum
+        consequuntur praesentium alias quisquam ipsa vero quod ducimus eaque eligendi quos aut, ullam saepe assumenda.
+        Iure aliquam expedita nostrum molestiae eaque Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
+        quasi praesentium fugit. Sed laudantium odio officiis animi? Doloremque necessitatibus assumenda quidem soluta
+        iure, deleniti id sapiente, accusamus placeat perspiciatis laudantium amet, magni pariatur.minima in labore,
+        quaerat tenetur blanditiis porro dignissimos quod rerum asperiores assumenda pariatur quia beatae nisi facere
+        est nihil optio facilis. Laborum sequi tempora a dignissimos dicta. Necessitatibus quos aliquam facere
+        voluptates. Facere.</div> <a class="a" href="#">Hide the last box</a>
+        <a class="a1" href="#">Show</a>
+    <div class="div3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse dicta quisquam fuga aliquid, repellendus dolores minus expedita voluptates harum nostrum facere illo velit ea dolorum amet optio deserunt, error id quae laboriosam perspiciatis modi omnis! Nostrum unde ad impedit iure! Amet animi quae pariatur qui.</div>
+    <p class="p">Hidden</p>
+    
+
+
+</body>
+
+</html>

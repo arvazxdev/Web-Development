@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Photos</title>
+    <link rel="stylesheet" href="Gallery Style.css">
+</head>
+
+<body>
+    <div class="div">
+
+        <div><button id="openDialogBtn" style="border: none;" type="button"><img class="img1" id="img"
+                    src="https://wallpapercave.com/wp/wp5207109.jpg" alt="Red Leaves"></button>
+        </div>
+
+        <dialog class="dialog dialog1" id="myDialog">
+            <p
+                style="font-size: 3vw; color: rgba(255, 255, 255);margin-bottom: 1.5vw ;position: absolute;margin-left: 0.5vw;">
+                Red Leaves</p>
+            <div class="divi"><img id="myButton1"
+                    style="height: 28vw; border: 0.3vw solid rgba(255, 255, 255, 0.6); border-radius: 1vw; margin-top: 4vw; cursor: zoom-in;"
+                    src="https://wallpapercave.com/wp/wp5207109.jpg" alt="Red Leaves">
+                <button
+                    style=" background-color: #ffffff00; cursor: pointer; height: 0vw; font-size: 3vw; margin-left: 1vw; margin-top: 0vw; border: none;"
+                    id="closeDialogBtn">
+                    <p style="border: 0.2vw solid white;">❌</p>
+                </button>
+            </div>
+            <div style="width: fit-content; cursor: pointer;display: flex;">
+                <div class="clickable-div" onclick="handleDivClick(this)" class="like"
+                    style="display: flex; width: fit-content; ">
+                    <div style="padding-top: 2vw; padding-left: 1vw ;"><svg style="display:grid;" height="3vw"
+                            width="3vw" viewBox="0 0 100 100">
+                            <path d="M10,30 A20,20,0,0,1,50,30 A20,20,0,0,1,90,30 Q90,60,50,90 Q10,60,10,30 Z"
+                                class="filled-svg" />
+                        </svg>
+                    </div>
+                    <span class="changed-color-span"
+                        style="font-size: 2.4vw;font-family: cursive; margin-left: 1vw; margin-top: 1.75vw;">Like</span>
+                </div>
+                <div style="display: flex;">
+                    <button class="myButton" id="myButton"
+                        style="border: none; background-color: rgba(0, 0, 0, 0); cursor: pointer;">
+                        <div><img class="visualimg"
+                                style="border: none;display: grid; width: 2.6vw; margin-top: 1.6vw; margin-left: 6vw;"
+                                src="Visual Search.png" alt="Visual Search"><span class="visual"
+                                style="display: grid; font-family: cursive; font-size: 2vw; margin-top: -2.8vw; margin-left: 9.5vw;">
+                                Visual Search</span></div>
+                    </button>
+                </div>
+
+                <div style="display: flex;">
+                    <button class="myButton2" id="myButton2"
+                        style="border: none; background-color: rgba(0, 0, 0, 0); cursor: pointer;">
+                        <div><img class="visualimg"
+                                style="border: none;display: grid; width: 2.6vw; margin-top: 1.6vw; margin-left: 8vw; filter: brightness(200%);"
+                                src="https://cdn4.iconfinder.com/data/icons/files-images-solid-style/24/file-images-view-512.png"
+                                alt="View Image"><span class="visual"
+                                style="display: grid; font-family: cursive; font-size: 2vw; margin-top: -2.8vw; margin-left: 11.5vw;">
+                                View</span></div>
+                    </button>
+                </div>
+
+            </div>
+
+        </dialog>
+
+
+        <div><img class="img" id="img"
+                    src="https://th.bing.com/th/id/OIP.c5IHavrnbntQnqpWgorTowHaEo?rs=1&pid=ImgDetMain"
+                    alt="Roadside Nature">
+        </div>
+
+
+        <div>
+            <img id="img" class="img img2"
+                src="https://th.bing.com/th/id/OIP.uzoqk_5U5EGjz1iHSo6WOwHaEo?rs=1&pid=ImgDetMain" alt="Moutains">
+        </div>
+        <div>
+            <img class="img" id="img" src="https://wallpaperset.com/w/full/b/3/1/125908.jpg" alt="Beautiful World">
+        </div>
+
+    </div>
+
+    <div class="div" style="position: fixed;">
+        <div>
+            <img style="display: grid;" class="img1" id="img2"
+                src="https://www.bing.com/th/id/OIP.fVT57bEaGCWA3V7a3DnnsQHaEo?w=326&h=180&c=7&r=0&o=5&dpr=1.8&pid=1.7"
+                alt="Tropical Forest">
+        </div>
+        <div>
+            <img style="display: grid;" class="img" id="img2"
+                src="https://th.bing.com/th/id/OIP.c10sX6EVjreQo2iqy3ecggAAAA?w=299&h=180&c=7&r=0&o=5&dpr=1.8&pid=1.7"
+                alt="Beautiful Drain">
+        </div>
+        <div>
+            <img style="display: grid;" id="img2" class="img img2"
+                src="https://th.bing.com/th/id/OIP.DG3PcfNWYPpdaIZAhEcO6gHaEK?w=313&h=180&c=7&r=0&o=5&dpr=1.8&pid=1.7"
+                alt="Pure Lake">
+        </div>
+        <div>
+            <img style="display: grid;" class="img" id="img2"
+                src="https://www.bing.com/th/id/OIP.1aBUzh2qJPEi4S8KDmyUCgHaEo?w=245&h=180&c=7&r=0&o=5&dpr=1.8&pid=1.7"
+                alt="Green Crops">
+        </div>
+    </div>
+
+    <script src="Gallery Script.js"></script>
+</body>
+
+</html>

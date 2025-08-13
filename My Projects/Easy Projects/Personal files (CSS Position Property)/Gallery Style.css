@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap');
+
+@import url('CAUTION.ttf');
+
+.div {
+    display: flex;
+}
+
+* {
+    margin: 0vw;
+    padding: 0vw;
+    box-sizing: border-box;
+}
+
+.img {
+    margin-left: -0.9vw;
+
+}
+
+#img {
+    height: 15.6vw;
+    margin-bottom: 0vw;
+}
+
+#img2 {
+    height: 15.83vw;
+    margin-top: -0.6vw;
+}
+
+img {
+
+    box-sizing: border-box;
+    border: 0.3vw solid rgb(255, 255, 255)
+}
+
+.dialog {
+    /* display: block; */
+    overflow: hidden;
+    min-width: 95vw;
+    max-width: 95vw;
+    max-height: 95vh;
+    min-height: 95vh;
+    padding: 1vw;
+    background-color: #000000df;
+    border: 0.3vw solid #b6b6b6;
+    margin: 2vw;
+    border-radius: 1vw;
+}
+
+.divi {
+    display: flex;
+    justify-content: space-between;
+}
+
+.like {
+    color: #b6b6b6;
+
+}
+
+svg {
+    fill: none;
+    stroke: rgba(255, 255, 255, 0.7);
+    stroke-width: 1mm;
+    cursor: pointer;
+}
+
+.clickable-div.focus .filled-svg {
+    fill: rgb(255, 0, 0);
+    stroke: none;
+}
+
+.changed-color-span {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.clickable-div:hover .changed-color-span {
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+.clickable-div:hover .filled-svg {
+    stroke-width: 2mm;
+    stroke: rgb(255, 255, 255);
+}
+
+.visual {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.visualimg {
+    opacity: 0.6;
+}
+
+.myButton:hover .visual {
+    color: white;
+}
+
+.myButton:hover .visualimg {
+    opacity: 1;
+}
+
+.myButton:active .visual {
+    color: rgb(201, 157, 242);
+}
+
+.myButton:active .visualimg {
+    opacity: 0.6;
+}
+
+.myButton2:hover span {
+    color: white;
+}
+
+.myButton2:hover img {
+    opacity: 1;
+}
+
+.myButton2:active img {
+    opacity: 0.6;
+}
+
+.myButton2:active span {
+    color: rgb(201, 157, 242);
+}

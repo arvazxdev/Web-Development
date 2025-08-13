@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Position Properties</title>
+    <style>
+        img {
+            height: 50mm;
+            margin-left: 10mm;
+        }
+
+        .img2 {
+            position: relative;
+            top: -52.4mm;
+            margin-left: 7mm;
+            rotate: 5deg;
+        }
+
+        .img3 {
+            position: relative;
+            top: 25mm;
+            margin-left: 4mm;
+            rotate: 10deg;
+            position: absolute;
+        }
+
+        .pin {
+            height: 10mm;
+            position: absolute;
+            z-index: 1;
+            margin-left: 9mm;
+        }
+
+        .hover {
+            position: absolute;
+            font-family: sans-serif;
+            z-index: 2;
+            background-color: white;
+            width: 30mm;
+            height: 3.8mm;
+            text-align: center;
+            top: 22mm;
+            left: 18mm;
+            visibility: hidden;
+            font-size: 3mm;
+            border: 0.3mm solid black;
+        }
+
+        .feature {
+            position: absolute;
+            font-family: sans-serif;
+            z-index: 2;
+            background-color: white;
+            width: 55mm;
+            height: 4.8mm;
+            text-align: center;
+            /* top: 2mm; */
+            /* left: 70%; */
+            right: -45mm;
+            visibility: hidden;
+            font-size: 4mm;
+            border: 0.3mm solid black;
+        }
+
+        a:hover~.hover {
+            visibility: visible;
+        }
+
+        .p:hover~.hover {
+            visibility: visible;
+        }
+
+        input:invalid ~ .clear {
+            visibility: hidden;
+        }
+
+        input:invalid ~ .search {
+            visibility: hidden;
+        }
+
+        .search:hover + .feature{
+            visibility: visible;
+        }
+
+        .ft:hover{
+            cursor: pointer;
+            color: blue;
+        }
+
+        .ft:active{
+            text-decoration: underline;
+        }
+
+        .nf{
+            font-family: sans-serif;
+            background-color: white;
+            border: 0.3mm solid;
+            width: 56mm;
+            text-align: center;
+            position: fixed;
+            bottom: 0vh;
+            right: 4.5vw;
+            visibility: hidden;
+        }
+
+        .plus:hover ~ .nf{
+            visibility: visible;
+        }
+
+        .plus:hover{
+            cursor: no-drop;
+        }
+
+        input{
+            position: sticky;
+            top: 2mm;
+        }
+
+
+    </style>
+</head>
+
+<body style="overflow-x: hidden;">
+    <p class="p"
+        style="background-color: black; color: greenyellow; text-align: center; width: 50mm; margin-left: 31mm; border-radius: 1.5mm;">
+        Some wallpapers for you</p><br>
+    <a href="All photos.html"><img class="pin" src="Pin.png" alt=""></a>
+    <p class="hover">Show all wallpapers</p>
+    <div><img style="height: 55mm;" class="img1"
+            src="https://th.bing.com/th/id/OIP.uzoqk_5U5EGjz1iHSo6WOwHaEo?rs=1&pid=ImgDetMain" alt="Red leaves"></div>
+    <div><img class="img2" src="https://wallpapercave.com/wp/wp5207109.jpg" alt="White Clouds"></div>
+    <div><img style="height: 55.7mm;" class="img3"
+            src="https://th.bing.com/th/id/OIP.c5IHavrnbntQnqpWgorTowHaEo?rs=1&pid=ImgDetMain" alt="Forest"></div>
+
+    </div>
+
+    <div style="margin-top: -20mm; display: flex;justify-content: center; background-color: rgba(255, 252, 252, 0); height: 7mm; position: sticky; top: 2mm;"><div style="border: 0.4mm solid black; border-radius:10mm; display: flex ; justify-content: center; width: 70%; display: flex; justify-content: space-between; position:relative ;">&nbsp<input style="border: none; width: 87%; background-color: rgba(0, 0, 0, 0); outline: none; box-sizing: border-box;"type="text" placeholder="Search Folders..." type="text" required>
+        <button class="clear" style="border: none; background-color: rgba(255, 255, 255, 0); cursor: pointer;" type="button" onclick="this.previousElementSibling.value='';">❌</button><span class="search" style="cursor:not-allowed;">🔍&nbsp</span>
+        <p class="feature">Search feature is not available</p>
+        </div></div>
+        
+    <img style="height: 15mm; margin-top: 15mm; margin-left: 15mm; cursor:pointer;" src="folder.webp" alt="Folder">
+    <span class="ft" style="margin-left: -17.5mm; position: relative; top: 2mm; font-size: 3mm; font-family: sans-serif;">Hacking Tools</span>
+    
+    <img style="height: 15mm; margin-top: 15mm; margin-left: 15mm; cursor:pointer;" src="folder.webp" alt="Folder">
+    <span class="ft" style="margin-left: -20mm; position: relative; top: 2mm; font-size: 3mm; font-family: sans-serif;">MAC Hacking Tools</span>
+    
+    <img style="height: 15mm; margin-top: 15mm; margin-left: 8mm; cursor:pointer;" src="folder.webp" alt="Folder">
+    <span class="ft" style="margin-left: -20.5mm; position: relative; top: 2mm; font-size: 3mm; font-family: sans-serif;">Windows Hacking T...</span>
+    
+    <img style="height: 15mm; margin-top: 15mm; margin-left: 6.5mm; cursor:pointer;" src="folder.webp" alt="Folder">
+    <span class="ft" style="margin-left: -19mm; position: relative; top: 2mm; font-size: 3mm; font-family: sans-serif;">Kali Linux Hackin...</span>
+    
+    <img style="height: 15mm; margin-top: 15mm; margin-left: 7.5mm; cursor:pointer;" src="folder.webp" alt="Folder">
+    <span class="ft" style="margin-left: -20mm; position: relative; top: 2mm; font-size: 3mm; font-family: sans-serif;">Command Prompt</span>
+    
+    <img style="height: 15mm; margin-top: 15mm; margin-left: 11mm; cursor:pointer;" src="folder.webp" alt="Folder">
+    <span class="ft" style="margin-left: -21mm; position: relative; top: 2mm; font-size: 3mm; font-family: sans-serif;">Windows Powershell</span>
+    
+    <img style="height: 15mm; margin-top: 15mm; margin-left: 8.5mm; cursor:pointer;"  src="folder.webp" alt="Folder">
+    <span class="ft" style="margin-left: -15.5mm; position: relative; top: 2mm; font-size: 3mm; font-family: sans-serif;">MAC CMD</span>
+    
+    <img style="height: 15mm; margin-top: 15mm; margin-left: 15mm; cursor:pointer;" class="ft" src="folder.webp" alt="Folder">
+    <span class="ft" style="margin-left: -21.5mm; position: relative; top: 2mm; font-size: 3mm; font-family: sans-serif; overflow: hidden;">Web Development T...</span>
+    
+    <img style="height: 15mm; margin-top: 15mm; margin-left: 7mm; cursor:pointer;" class="ft" src="folder.webp" alt="Folder">
+    <span class="ft" style="margin-left: -21.5mm; position: relative; top: 2mm; font-size: 3mm; font-family: sans-serif;">Web Development P...</span>
+    
+    <img style="height: 15mm; margin-top: 15mm; margin-left: 7mm; cursor:pointer;" class="ft" src="folder.webp" alt="Folder">
+    <span class="ft" style="margin-left: -19mm; position: relative; top: 2mm; font-size: 3mm; font-family: sans-serif;">Python Tutorials</span>
+    
+    <img style="height: 15mm; margin-top: 15mm; margin-left: 13mm; cursor:pointer;" class="ft" src="folder.webp" alt="Folder">
+    <span class="ft" style="margin-left: -18.5mm; position: relative; top: 2mm; font-size: 3mm; font-family: sans-serif;">Python Projects</span>
+    
+    <img style="height: 15mm; margin-top: 15mm; margin-left: 12.5mm; cursor:pointer;" class="ft" src="folder.webp" alt="Folder">
+    <span class="ft" style="margin-left: -20.5mm; position: relative; top: 2mm; font-size: 3mm; font-family: sans-serif;">CyberSecurity Tut...</span>
+    
+    <img style="height: 15mm; margin-top: 15mm; margin-left: 9mm; cursor:pointer;" class="ft" src="folder.webp" alt="Folder">
+    <span class="ft" style="margin-left: -20mm; position: relative; top: 2mm; font-size: 3mm; font-family: sans-serif;">CyberSecurity Pro...</span>
+
+
+    <img style="height: 15mm; margin-top: 15mm; margin-left: 8mm; cursor:pointer;" src="folder.webp" alt="Folder">
+    <span class="ft" style="margin-left: -17.5mm; position: relative; top: 2mm; font-size: 3mm; font-family: sans-serif;">Hacking Tools</span>
+    
+    <img style="height: 15mm; margin-top: 15mm; margin-left: 15mm; cursor:pointer;" src="folder.webp" alt="Folder">
+    <span class="ft" style="margin-left: -20mm; position: relative; top: 2mm; font-size: 3mm; font-family: sans-serif;">MAC Hacking Tools</span>
+    
+    <img style="height: 15mm; margin-top: 15mm; margin-left: 8mm; cursor:pointer;" src="folder.webp" alt="Folder">
+    <span class="ft" style="margin-left: -20.5mm; position: relative; top: 2mm; font-size: 3mm; font-family: sans-serif;">Windows Hacking T...</span>
+    
+    <img style="height: 15mm; margin-top: 15mm; margin-left: 6.5mm; cursor:pointer;" src="folder.webp" alt="Folder">
+    <span class="ft" style="margin-left: -19mm; position: relative; top: 2mm; font-size: 3mm; font-family: sans-serif;">Kali Linux Hackin...</span>
+    
+    <img style="height: 15mm; margin-top: 15mm; margin-left: 7.5mm; cursor:pointer;" src="folder.webp" alt="Folder">
+    <span class="ft" style="margin-left: -20mm; position: relative; top: 2mm; font-size: 3mm; font-family: sans-serif;">Command Prompt</span>
+    
+    <img style="height: 15mm; margin-top: 15mm; margin-left: 11mm; cursor:pointer;" src="folder.webp" alt="Folder">
+    <span class="ft" class="ft" style="margin-left: -21mm; position: relative; top: 2mm; font-size: 3mm; font-family: sans-serif;">Windows Powershell</span>
+    
+    <img style="height: 15mm; margin-top: 15mm; margin-left: 8.5mm; cursor:pointer;"  src="folder.webp" alt="Folder">
+    <span class="ft" style="margin-left: -15.5mm; position: relative; top: 2mm; font-size: 3mm; font-family: sans-serif;">MAC CMD</span>
+    
+    <img style="height: 15mm; margin-top: 15mm; margin-left: 15mm; cursor:pointer;" class="ft" src="folder.webp" alt="Folder">
+    <span class="ft" style="margin-left: -21.5mm; position: relative; top: 2mm; font-size: 3mm; font-family: sans-serif; overflow: hidden;">Web Development T...</span>
+    
+    <img style="height: 15mm; margin-top: 15mm; margin-left: 7mm; cursor:pointer;" class="ft" src="folder.webp" alt="Folder">
+    <span class="ft" style="margin-left: -21.5mm; position: relative; top: 2mm; font-size: 3mm; font-family: sans-serif;">Web Development P...</span>
+    
+    <img style="height: 15mm; margin-top: 15mm; margin-left: 7mm; cursor:pointer;" class="ft" src="folder.webp" alt="Folder">
+    <span class="ft" style="margin-left: -19mm; position: relative; top: 2mm; font-size: 3mm; font-family: sans-serif;">Python Tutorials</span>
+    
+    <img style="height: 15mm; margin-top: 15mm; margin-left: 13mm; cursor:pointer;" class="ft" src="folder.webp" alt="Folder">
+    <span class="ft" style="margin-left: -18.5mm; position: relative; top: 2mm; font-size: 3mm; font-family: sans-serif;">Python Projects</span>
+    
+    <img style="height: 15mm; margin-top: 15mm; margin-left: 12.5mm; cursor:pointer;" class="ft" src="folder.webp" alt="Folder">
+    <span class="ft" style="margin-left: -20.5mm; position: relative; top: 2mm; font-size: 3mm; font-family: sans-serif;">CyberSecurity Tut...</span>
+    
+    <img style="height: 15mm; margin-top: 15mm; margin-left: 9mm; cursor:pointer;" class="ft" src="folder.webp" alt="Folder">
+    <span class="ft" style="margin-left: -20mm; position: relative; top: 2mm; font-size: 3mm; font-family: sans-serif;">CyberSecurity Pro...</span>
+
+
+    <img style="height: 15mm; margin-top: 15mm; margin-left: 8mm; cursor:pointer;" src="folder.webp" alt="Folder">
+    <span class="ft" style="margin-left: -17.5mm; position: relative; top: 2mm; font-size: 3mm; font-family: sans-serif;">Hacking Tools</span>
+    
+    <img style="height: 15mm; margin-top: 15mm; margin-left: 15mm; cursor:pointer;" src="folder.webp" alt="Folder">
+    <span class="ft" style="margin-left: -20mm; position: relative; top: 2mm; font-size: 3mm; font-family: sans-serif;">MAC Hacking Tools</span>
+    
+    <img style="height: 15mm; margin-top: 15mm; margin-left: 8mm; cursor:pointer;" src="folder.webp" alt="Folder">
+    <span class="ft" style="margin-left: -20.5mm; position: relative; top: 2mm; font-size: 3mm; font-family: sans-serif;">Windows Hacking T...</span>
+    
+    <img style="height: 15mm; margin-top: 15mm; margin-left: 6.5mm; cursor:pointer;" src="folder.webp" alt="Folder">
+    <span class="ft" style="margin-left: -19mm; position: relative; top: 2mm; font-size: 3mm; font-family: sans-serif;">Kali Linux Hackin...</span>
+    
+    <img style="height: 15mm; margin-top: 15mm; margin-left: 7.5mm; cursor:pointer;" src="folder.webp" alt="Folder">
+    <span class="ft" style="margin-left: -20mm; position: relative; top: 2mm; font-size: 3mm; font-family: sans-serif;">Command Prompt</span>
+    
+    <img style="height: 15mm; margin-top: 15mm; margin-left: 11mm; cursor:pointer;" src="folder.webp" alt="Folder">
+    <span class="ft" style="margin-left: -21mm; position: relative; top: 2mm; font-size: 3mm; font-family: sans-serif;">Windows Powershell</span>
+    
+    <img style="height: 15mm; margin-top: 15mm; margin-left: 8.5mm; cursor:pointer;"  src="folder.webp" alt="Folder">
+    <span class="ft" style="margin-left: -15.5mm; position: relative; top: 2mm; font-size: 3mm; font-family: sans-serif;">MAC CMD</span>
+    
+    <img style="height: 15mm; margin-top: 15mm; margin-left: 15mm; cursor:pointer;" class="ft" src="folder.webp" alt="Folder">
+    <span class="ft" style="margin-left: -21.5mm; position: relative; top: 2mm; font-size: 3mm; font-family: sans-serif; overflow: hidden;">Web Development T...</span>
+    
+    <img style="height: 15mm; margin-top: 15mm; margin-left: 7mm; cursor:pointer;" class="ft" src="folder.webp" alt="Folder">
+    <span class="ft" style="margin-left: -21.5mm; position: relative; top: 2mm; font-size: 3mm; font-family: sans-serif;">Web Development P...</span>
+    
+    <img style="height: 15mm; margin-top: 15mm; margin-left: 7mm; cursor:pointer;" class="ft" src="folder.webp" alt="Folder">
+    <span class="ft" style="margin-left: -19mm; position: relative; top: 2mm; font-size: 3mm; font-family: sans-serif;">Python Tutorials</span>
+    
+    <img style="height: 15mm; margin-top: 15mm; margin-left: 13mm; cursor:pointer;" class="ft" src="folder.webp" alt="Folder">
+    <span class="ft" style="margin-left: -18.5mm; position: relative; top: 2mm; font-size: 3mm; font-family: sans-serif;">Python Projects</span>
+    
+    <img style="height: 15mm; margin-top: 15mm; margin-left: 12.5mm; cursor:pointer;" class="ft" src="folder.webp" alt="Folder">
+    <span class="ft" style="margin-left: -20.5mm; position: relative; top: 2mm; font-size: 3mm; font-family: sans-serif;">CyberSecurity Tut...</span>
+    
+    <img style="height: 15mm; margin-top: 15mm; margin-left: 9mm; cursor:pointer;" class="ft" src="folder.webp" alt="Folder">
+    <span class="ft" style="margin-left: -20mm; position: relative; top: 2mm; font-size: 3mm; font-family: sans-serif;">CyberSecurity Pro...</span>
+
+
+    <img style="height: 15mm; margin-top: 15mm; margin-left: 8mm; cursor:pointer;" src="folder.webp" alt="Folder">
+    <span class="ft" style="margin-left: -17.5mm; position: relative; top: 2mm; font-size: 3mm; font-family: sans-serif;">Hacking Tools</span>
+    
+    <img style="height: 15mm; margin-top: 15mm; margin-left: 15mm; cursor:pointer;" src="folder.webp" alt="Folder">
+    <span class="ft" style="margin-left: -20mm; position: relative; top: 2mm; font-size: 3mm; font-family: sans-serif;">MAC Hacking Tools</span>
+    
+    <img style="height: 15mm; margin-top: 15mm; margin-left: 8mm; cursor:pointer;" src="folder.webp" alt="Folder">
+    <span class="ft" style="margin-left: -20.5mm; position: relative; top: 2mm; font-size: 3mm; font-family: sans-serif;">Windows Hacking T...</span>
+    
+    <img style="height: 15mm; margin-top: 15mm; margin-left: 6.5mm; cursor:pointer;" src="folder.webp" alt="Folder">
+    <span class="ft" style="margin-left: -19mm; position: relative; top: 2mm; font-size: 3mm; font-family: sans-serif;">Kali Linux Hackin...</span>
+    
+    <img style="height: 15mm; margin-top: 15mm; margin-left: 7.5mm; cursor:pointer;" src="folder.webp" alt="Folder">
+    <span class="ft" style="margin-left: -20mm; position: relative; top: 2mm; font-size: 3mm; font-family: sans-serif;">Command Prompt</span>
+    
+    <img style="height: 15mm; margin-top: 15mm; margin-left: 11mm; cursor:pointer;" src="folder.webp" alt="Folder">
+    <span class="ft" style="margin-left: -21mm; position: relative; top: 2mm; font-size: 3mm; font-family: sans-serif;">Windows Powershell</span>
+    
+    <img style="height: 15mm; margin-top: 15mm; margin-left: 8.5mm; cursor:pointer;"  src="folder.webp" alt="Folder">
+    <span class="ft" style="margin-left: -15.5mm; position: relative; top: 2mm; font-size: 3mm; font-family: sans-serif;">MAC CMD</span>
+    
+    <img style="height: 15mm; margin-top: 15mm; margin-left: 15mm; cursor:pointer;" class="ft" src="folder.webp" alt="Folder">
+    <span class="ft" style="margin-left: -21.5mm; position: relative; top: 2mm; font-size: 3mm; font-family: sans-serif; overflow: hidden;">Web Development T...</span>
+    
+    <img style="height: 15mm; margin-top: 15mm; margin-left: 7mm; cursor:pointer;" class="ft" src="folder.webp" alt="Folder">
+    <span class="ft" style="margin-left: -21.5mm; position: relative; top: 2mm; font-size: 3mm; font-family: sans-serif;">Web Development P...</span>
+    
+    <img style="height: 15mm; margin-top: 15mm; margin-left: 7mm; cursor:pointer;" class="ft" src="folder.webp" alt="Folder">
+    <span class="ft" style="margin-left: -19mm; position: relative; top: 2mm; font-size: 3mm; font-family: sans-serif;">Python Tutorials</span>
+    
+    <img style="height: 15mm; margin-top: 15mm; margin-left: 13mm; cursor:pointer;" class="ft" src="folder.webp" alt="Folder">
+    <span class="ft" style="margin-left: -18.5mm; position: relative; top: 2mm; font-size: 3mm; font-family: sans-serif;">Python Projects</span>
+    
+    <img style="height: 15mm; margin-top: 15mm; margin-left: 12.5mm; cursor:pointer;" class="ft" src="folder.webp" alt="Folder">
+    <span class="ft" style="margin-left: -20.5mm; position: relative; top: 2mm; font-size: 3mm; font-family: sans-serif;">CyberSecurity Tut...</span>
+    
+    <img style="height: 15mm; margin-top: 15mm; margin-left: 9mm; cursor:pointer;" class="ft" src="folder.webp" alt="Folder">
+    <span class="ft" style="margin-left: -20mm; position: relative; top: 2mm; font-size: 3mm; font-family: sans-serif;">CyberSecurity Pro...</span>
+
+
+    <img style="height: 15mm; margin-top: 15mm; margin-left: 8mm; cursor:pointer;" src="folder.webp" alt="Folder">
+    <span class="ft" style="margin-left: -17.5mm; position: relative; top: 2mm; font-size: 3mm; font-family: sans-serif;">Hacking Tools</span>
+    
+    <img style="height: 15mm; margin-top: 15mm; margin-left: 15mm; cursor:pointer;" src="folder.webp" alt="Folder">
+    <span class="ft" style="margin-left: -20mm; position: relative; top: 2mm; font-size: 3mm; font-family: sans-serif;">MAC Hacking Tools</span>
+    
+    <img style="height: 15mm; margin-top: 15mm; margin-left: 8mm; cursor:pointer;" src="folder.webp" alt="Folder">
+    <span class="ft" style="margin-left: -20.5mm; position: relative; top: 2mm; font-size: 3mm; font-family: sans-serif;">Windows Hacking T...</span>
+    
+    <img style="height: 15mm; margin-top: 15mm; margin-left: 6.5mm; cursor:pointer;" src="folder.webp" alt="Folder">
+    <span class="ft" style="margin-left: -19mm; position: relative; top: 2mm; font-size: 3mm; font-family: sans-serif;">Kali Linux Hackin...</span>
+    
+    <img style="height: 15mm; margin-top: 15mm; margin-left: 7.5mm; cursor:pointer;" src="folder.webp" alt="Folder">
+    <span class="ft" style="margin-left: -20mm; position: relative; top: 2mm; font-size: 3mm; font-family: sans-serif;">Command Prompt</span>
+    
+    <img style="height: 15mm; margin-top: 15mm; margin-left: 11mm; cursor:pointer;" src="folder.webp" alt="Folder">
+    <span class="ft" style="margin-left: -21mm; position: relative; top: 2mm; font-size: 3mm; font-family: sans-serif;">Windows Powershell</span>
+    
+    <img style="height: 15mm; margin-top: 15mm; margin-left: 8.5mm; cursor:pointer;"  src="folder.webp" alt="Folder">
+    <span class="ft" style="margin-left: -15.5mm; position: relative; top: 2mm; font-size: 3mm; font-family: sans-serif;">MAC CMD</span>
+    
+    <img style="height: 15mm; margin-top: 15mm; margin-left: 15mm; cursor:pointer;" class="ft" src="folder.webp" alt="Folder">
+    <span class="ft" style="margin-left: -21.5mm; position: relative; top: 2mm; font-size: 3mm; font-family: sans-serif; overflow: hidden;">Web Development T...</span>
+    
+    <img style="height: 15mm; margin-top: 15mm; margin-left: 7mm; cursor:pointer;" class="ft" src="folder.webp" alt="Folder">
+    <span class="ft" style="margin-left: -21.5mm; position: relative; top: 2mm; font-size: 3mm; font-family: sans-serif;">Web Development P...</span>
+    
+    <img style="height: 15mm; margin-top: 15mm; margin-left: 7mm; cursor:pointer;" class="ft" src="folder.webp" alt="Folder">
+    <span class="ft" style="margin-left: -19mm; position: relative; top: 2mm; font-size: 3mm; font-family: sans-serif;">Python Tutorials</span>
+    
+    <img style="height: 15mm; margin-top: 15mm; margin-left: 13mm; cursor:pointer;" class="ft" src="folder.webp" alt="Folder">
+    <span class="ft" style="margin-left: -18.5mm; position: relative; top: 2mm; font-size: 3mm; font-family: sans-serif;">Python Projects</span>
+    
+    <img style="height: 15mm; margin-top: 15mm; margin-left: 12.5mm; cursor:pointer;" class="ft" src="folder.webp" alt="Folder">
+    <span class="ft" style="margin-left: -20.5mm; position: relative; top: 2mm; font-size: 3mm; font-family: sans-serif;">CyberSecurity Tut...</span>
+    
+    <img style="height: 15mm; margin-top: 15mm; margin-left: 9mm; cursor:pointer;"  src="folder.webp" alt="Folder">
+    <span class="ft" style="margin-left: -20mm; position: relative; top: 2mm; font-size: 3mm; font-family: sans-serif;">CyberSecurity Pro...</span>
+
+
+    <img style="height: 15mm; margin-top: 15mm; margin-left: 8mm; cursor:pointer;" src="folder.webp" alt="Folder">
+    <span class="ft" style="margin-left: -17.5mm; position: relative; top: 2mm; font-size: 3mm; font-family: sans-serif;">Hacking Tools</span>
+    
+    <img style="height: 15mm; margin-top: 15mm; margin-left: 15mm; cursor:pointer;" src="folder.webp" alt="Folder">
+    <span class="ft" style="margin-left: -20mm; position: relative; top: 2mm; font-size: 3mm; font-family: sans-serif;">MAC Hacking Tools</span>
+    
+    <img style="height: 15mm; margin-top: 15mm; margin-left: 8mm; cursor:pointer;" src="folder.webp" alt="Folder">
+    <span class="ft" style="margin-left: -20.5mm; position: relative; top: 2mm; font-size: 3mm; font-family: sans-serif;">Windows Hacking T...</span>
+    
+    <img style="height: 15mm; margin-top: 15mm; margin-left: 6.5mm; cursor:pointer;" src="folder.webp" alt="Folder">
+    <span class="ft" style="margin-left: -19mm; position: relative; top: 2mm; font-size: 3mm; font-family: sans-serif;">Kali Linux Hackin...</span>
+    
+    <img style="height: 15mm; margin-top: 15mm; margin-left: 7.5mm; cursor:pointer;" src="folder.webp" alt="Folder">
+    <span class="ft" style="margin-left: -20mm; position: relative; top: 2mm; font-size: 3mm; font-family: sans-serif;">Command Prompt</span>
+    
+    <img style="height: 15mm; margin-top: 15mm; margin-left: 11mm; cursor:pointer;" src="folder.webp" alt="Folder">
+    <span class="ft" style="margin-left: -21mm; position: relative; top: 2mm; font-size: 3mm; font-family: sans-serif;">Windows Powershell</span>
+    
+    <img style="height: 15mm; margin-top: 15mm; margin-left: 8.5mm; cursor:pointer;"  src="folder.webp" alt="Folder">
+    <span class="ft" style="margin-left: -15.5mm; position: relative; top: 2mm; font-size: 3mm; font-family: sans-serif;">MAC CMD</span>
+    
+    <img style="height: 15mm; margin-top: 15mm; margin-left: 15mm; cursor:pointer;" class="ft" src="folder.webp" alt="Folder">
+    <span class="ft" style="margin-left: -21.5mm; position: relative; top: 2mm; font-size: 3mm; font-family: sans-serif; overflow: hidden;">Web Development T...</span>
+    
+    <img style="height: 15mm; margin-top: 15mm; margin-left: 7mm; cursor:pointer;" class="ft" src="folder.webp" alt="Folder">
+    <span class="ft" style="margin-left: -21.5mm; position: relative; top: 2mm; font-size: 3mm; font-family: sans-serif;">Web Development P...</span>
+    
+    <img style="height: 15mm; margin-top: 15mm; margin-left: 7mm; cursor:pointer;" class="ft" src="folder.webp" alt="Folder">
+    <span class="ft" style="margin-left: -19mm; position: relative; top: 2mm; font-size: 3mm; font-family: sans-serif;">Python Tutorials</span>
+    
+    <img style="height: 15mm; margin-top: 15mm; margin-left: 13mm; cursor:pointer;" class="ft" src="folder.webp" alt="Folder">
+    <span class="ft" style="margin-left: -18.5mm; position: relative; top: 2mm; font-size: 3mm; font-family: sans-serif;">Python Projects</span>
+    
+    <img style="height: 15mm; margin-top: 15mm; margin-left: 12.5mm; cursor:pointer;" class="ft" src="folder.webp" alt="Folder">
+    <span class="ft" style="margin-left: -20.5mm; position: relative; top: 2mm; font-size: 3mm; font-family: sans-serif;">CyberSecurity Tut...</span>
+    
+    <img style="height: 15mm; margin-top: 15mm; margin-left: 9mm; cursor:pointer;" class="ft" src="folder.webp" alt="Folder">
+    <span class="ft" style="margin-left: -20mm; position: relative; top: 2mm; font-size: 3mm; font-family: sans-serif;">CyberSecurity Pro...</span>
+
+    <img class="plus" style="height: 10vh; position: fixed; bottom: 2vh; right: 1vw;" src="plus icon.png" alt="Add a Folder">
+
+    <p class="nf">This feature is not available</p>
+</body>
+
+</html>

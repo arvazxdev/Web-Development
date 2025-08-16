@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card View</title>
+</head>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+    .main {
+        box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1), -10px -10px 10px rgba(0, 0, 0, 0.116);
+        height: 150mm;
+        width: 85mm;
+        border-radius: 10px;
+        background-color: rgb(255, 255, 255);
+    }
+
+    .span {
+        border: 1px solid rgba(0, 0, 0, 0.42);
+        border-radius: 20mm;
+        padding: 1.5mm;
+        font-size: 3mm;
+        font-family: sans-serif;
+        margin-left: 3mm;
+        letter-spacing: .1mm;
+        cursor: not-allowed;
+
+    }
+
+    .span1 {
+        border: 1px solid rgba(0, 0, 0, 0.42);
+        border-radius: 20mm;
+        padding: 1.5mm;
+        font-size: 3mm;
+        font-family: sans-serif;
+        margin-left: 1.5mm;
+        letter-spacing: .1mm;
+        cursor: no-drop;
+    }
+
+    .span:hover{
+        background-color: rgb(255, 240, 240);
+    }
+  
+    .span1:hover{
+        background-color: rgb(255, 240, 240);
+    }
+
+    p{
+        padding: 2mm;
+        margin-top: -3mm;
+        font-family: cursive;
+    }
+
+    .button:hover{
+        background-color: rgb(255, 231, 231) !important;
+    }
+
+</style>
+
+<body style=" display: flex; justify-content: center; cursor:auto;" bgcolor="gray">
+    <div class="main">
+        <img height="300mm"
+            style="border-radius: 20px; padding-top: 10px; padding-left: 10px; padding-right: 10px; padding-bottom: 6px;"
+            src="A man standing in nature.png" alt="">
+        <div><span class="span">Success</span> <span class="span1">Nature</span>
+            <h1 style="font-family: monospace; letter-spacing: .5mm; margin-left: 2mm; color: black;">Success</h1>
+            <p style="color: gray; font-size: small;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus dolorum ab ea vitae sed nostrum commodi laborum doloremque, ullam et, quam distinctio neque minus incidunt impedit dolores ad voluptas maiores?</p>
+            <div  style="display: flex; justify-content: center; "><span class="button" style="background-color: rgba(0, 44, 167, 0.139); color: rgb(0, 0, 255); padding: 4mm; border-radius: 20mm; font-size: 3mm; font-family: outfit; cursor: no-drop; font-weight: 500;" >Read More</span></div>
+        </div> 
+ 
+    </div>
+
+</body>
+
+</html>

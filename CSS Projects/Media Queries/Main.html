@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Media Queries</title>
+<style>
+    *{
+        padding: 10px;
+        margin: 10px;
+    }
+    
+    .maindiv{
+        display: flex;
+    }
+    
+    .div{
+        height: 90mm;
+        width: 90mm;
+        background-color: rgb(255, 0, 0);
+        border: 2mm solid black;
+        box-shadow: 10px 10px 10mm rgb(65, 65, 65);
+    }
+    
+    @media only screen and (max-width: 1000px){
+        .maindiv{
+            display: block;
+        }
+    }
+</style>
+<body>
+<div class="maindiv">
+    <div class="div"></div>
+    <div class="div"></div>
+    <div class="div"></div>
+</div>
+</body>
+</html>

@@ -1,0 +1,30 @@
+:root {
+    --flex: flex;
+    --defpad: 1mm;
+    --bgcolor: red;
+    --bgcolor2: rgb(0, 0, 255);
+    --stcolor: black;
+    --stwidth: 2mm;
+    --border: 2mm solid black;
+    --size: 50mm
+}
+
+* {
+    padding: var(--defpad);
+    margin: var(--defpad);
+}
+
+.maindiv {
+    display: var(--flex);
+}
+
+#blue{
+    background-color: var(--bgcolor2);
+}
+
+.div {
+    background: var(--bgcolor);
+    border: var(--border);
+    height: var(--size);
+    width: var(--size);
+}

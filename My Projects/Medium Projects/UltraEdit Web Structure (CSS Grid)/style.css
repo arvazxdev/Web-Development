@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@media only screen and (max-width: 25cm) {
+    .navitems {
+        visibility: hidden;
+    }
+
+    .menu {
+        height: 8mm !important;
+        visibility: visible !important;
+        margin-right: 5vw;
+    }
+
+    .mdl .dl {
+        display: grid;
+        grid-template-columns: 0;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        height: 67.5cm;
+        column-gap: 1cm;
+    }
+
+    .dl div {
+        width: 100vw !important;
+    }
+
+    strong {
+        font-size: 8mm !important;
+    }
+
+    .hint {
+        font-size: 5mm !important;
+    }
+
+    .mps {
+        position: relative;
+        bottom: -23mm !important;
+    }
+
+    .ps {
+        position: relative;
+        bottom: -17mm !important;
+    }
+}
+
+
+* {
+    font-family: poppins;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    /* box-sizing: border-box; */
+    /* border: 2px solid black; */
+}
+
+nav {
+    padding-top: 5mm;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+nav img {
+    height: 1.5cm;
+}
+
+.navitems {
+    display: flex;
+    column-gap: 7mm;
+    font-size: 3.5mm;
+}
+
+.navitems img {
+    height: 4mm;
+}
+
+.lanicon {
+    height: 7mm !important;
+    margin-left: 8mm;
+}
+
+.menu {
+    cursor: no-drop;
+    visibility: hidden;
+}
+
+.navitems>span {
+    display: flex;
+    align-items: center;
+    column-gap: 1mm;
+}
+
+.homediv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 11cm;
+    text-align: center;
+    /* background-color: red; */
+}
+
+.ueb {
+    font-weight: 600;
+    letter-spacing: normal;
+}
+
+.hdmc {
+    font-size: 13mm;
+    font-weight: 300;
+    letter-spacing: -.5mm;
+}
+
+.reviews {
+    margin-left: 5mm;
+    height: 9.5mm;
+}
+
+.hd {
+    width: 275mm;
+}
+
+.df {
+    font-size: 6.5mm;
+    font-weight: 400;
+    margin-top: 8mm;
+    letter-spacing: -.2mm;
+}
+
+.dmlv {
+    font-weight: 700;
+    margin-top: 8mm;
+    background-color: rgb(0, 186, 219);
+    width: fit-content;
+    padding: 4mm 6mm;
+    border-radius: 1.5mm;
+    color: white;
+    font-size: 3.5mm;
+    letter-spacing: .15mm;
+    text-decoration: none;
+    cursor: no-drop;
+}
+
+.dmlvp {
+    display: flex;
+    justify-content: center;
+}
+
+.mv {
+    display: flex;
+    justify-content: center;
+}
+
+.v {
+    margin-left: 4cm;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 29cm;
+}
+
+.due {
+    font-size: 6mm;
+}
+
+.version {
+    font-size: 3.5mm;
+}
+
+.mdl {
+    display: flex;
+    justify-content: center;
+    margin-top: 10mm;
+}
+
+.dl {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 6mm 7mm;
+    width: 25cm;
+    height: 18cm;
+    flex-wrap: wrap;
+}
+
+.dl>div {
+    background-color: #f9f9f9;
+    border-radius: 2mm;
+}
+
+.down- {
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+}
+
+.undown- {
+    cursor: no-drop;
+    color: white;
+}
+
+.aqua {
+    background-color: #00b6d1;
+    border-radius: 1mm;
+    padding: 2.5mm 4mm;
+    font-size: 3mm;
+    /* margin-left: 2mm; */
+    font-weight: 600;
+
+    color: white;
+}
+
+.pos- {
+    position: relative;
+    top: 1.3mm;
+}
+
+.green {
+    border-radius: 1mm;
+    padding: 2.5mm 4mm;
+    background-color: rgb(0, 182, 0);
+    font-size: 3mm;
+    /* margin-left: 2mm; */
+    font-weight: 600;
+    color: white;
+}
+
+strong {
+    display: flex;
+    justify-content: center;
+    margin-top: 6mm;
+    font-size: 5mm;
+}
+
+.mps {
+    display: flex;
+    justify-content: center;
+    gap: 2mm;
+    position: relative;
+    bottom: -12mm;
+}
+
+.ps {
+    display: flex;
+    justify-content: center;
+    gap: 2mm;
+    position: relative;
+    bottom: -7.5mm;
+}
+
+.dc {
+    display: flex;
+    justify-content: center;
+    gap: 2mm;
+}
+
+.hint {
+    display: flex;
+    justify-content: center;
+    font-size: 3mm;
+}

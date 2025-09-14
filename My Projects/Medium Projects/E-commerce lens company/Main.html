@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce lens company</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <div class="img-cont">
+            <img class="logo" height="50" src="favicon.ico" alt="Logo">
+        </div>
+        <div class="content">
+            An e-commerce lens company
+        </div>
+        <div class="as-cont">
+            <a href="#">Home</a>
+            <a href="#">Join Us!</a>
+            <a href="#">Contanct Us!</a>
+            <a href="#">About Us!</a>
+        </div>
+    </nav>
+
+    <main>
+        <div class="img-slider-cont">
+            <div class="img-slider"><img height="500" src="assets/img1.webp" alt="" class="img img1">
+                <img height="500" src="assets/img2.jpg" alt="" class="img img2">
+                <img height="500" src="assets/img3.webp" alt="" class="img img3">
+                <img height="500" src="assets/img4.webp" alt="" class="img img4">
+                <img height="500" src="assets/img5.jpg" alt="" class="img img5">
+            </div>
+
+            <div class="dots">
+                <span style="background-color: rgb(100, 100, 100);" class="dot dot1"></span>
+                <span class="dot dot2"></span>
+                <span class="dot dot3"></span>
+                <span class="dot dot4"></span>                <span class="dot dot5"></span>
+            </div>
+        </div>
+
+         <div class="large-txt-cont">
+            <span class="large-txt">Get <span>Best Quality Glasses</span> At Our Store!</span>
+         </div>
+
+    </main>
+
+    <div class="sepration"></div>
+    <footer>
+        <div class="animator-cont">
+            <div class="animator-1">
+                
+                <div class="animator-1-img">
+                    <img class="glass glass-1" height="200" src="assets/Glass-1.webp" alt="">
+                </div>
+                <div class="lorem">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab numquam illo eius alias, maiores quam, aliquam autem sint modi laborum voluptatum accusamus cupiditate?</div>
+            </div>
+            <div class="footer-cont">
+                <span>Get Different <span>Varieties of Glasses</span> Here!</span>
+            </div>
+            <div class="animator-2">
+                
+                <div class="animator-2-img">
+                    <img class="glass glass-2" height="200" src="assets/Glass-2.webp" alt="">
+                </div>
+                <div class="lorem">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis quae itaque consectetur iste beatae sed molestiae officiis quidem in, perferendis ab consequuntur ex!</div>
+            </div>
+        </div>
+        <div class="sepration2"></div>
+        <center><button onclick="joinPage()">Join Us Now!</button></center>
+        
+    </footer>
+
+
+    <script>
+        let dot1 = document.querySelector(".dot1")
+        let dot2 = document.querySelector(".dot2")
+        let dot3 = document.querySelector(".dot3")
+        let dot4 = document.querySelector(".dot4")
+        let dot5 = document.querySelector(".dot5")
+
+
+        setTimeout(() => {
+            dot1.style.backgroundColor = "rgb(200, 200, 200)"
+            dot2.style.backgroundColor = "rgb(100, 100, 100)"
+        }, 4000);
+
+        setTimeout(() => {
+            dot2.style.backgroundColor = "rgb(200, 200, 200)"
+            dot3.style.backgroundColor = "rgb(100, 100, 100)"
+        }, 8000);
+
+        setTimeout(() => {
+            dot3.style.backgroundColor = "rgb(200, 200, 200)"
+            dot4.style.backgroundColor = "rgb(100, 100, 100)"
+        }, 12000);
+
+        setTimeout(() => {
+            dot4.style.backgroundColor = "rgb(200, 200, 200)"
+            dot5.style.backgroundColor = "rgb(100, 100, 100)"
+        }, 16000);
+
+
+        setTimeout(() => {
+            dot5.style.backgroundColor = "rgb(200, 200, 200)"
+            dot1.style.backgroundColor = "rgb(100, 100, 100)"
+        }, 20000);
+
+        setInterval(() => {
+            setTimeout(() => {
+                dot1.style.backgroundColor = "rgb(200, 200, 200)"
+                dot2.style.backgroundColor = "rgb(100, 100, 100)"
+            }, 4000);
+
+            setTimeout(() => {
+                dot2.style.backgroundColor = "rgb(200, 200, 200)"
+                dot3.style.backgroundColor = "rgb(100, 100, 100)"
+            }, 8000);
+
+            setTimeout(() => {
+                dot3.style.backgroundColor = "rgb(200, 200, 200)"
+                dot4.style.backgroundColor = "rgb(100, 100, 100)"
+            }, 12000);
+
+            setTimeout(() => {
+                dot4.style.backgroundColor = "rgb(200, 200, 200)"
+                dot5.style.backgroundColor = "rgb(100, 100, 100)"
+            }, 16000);
+
+
+            setTimeout(() => {
+                dot5.style.backgroundColor = "rgb(200, 200, 200)"
+                dot1.style.backgroundColor = "rgb(100, 100, 100)"
+            }, 20000);
+        }, 20000);
+
+       function joinPage() {
+        location.href = "Join_Us.html";
+       }
+
+
+
+    </script>
+</body>
+
+</html>

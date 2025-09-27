@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: poppins;
+}
+
+.maindiv {
+    display: flex;
+}
+
+.navitm {
+    display: flex;
+}
+
+nav {
+    background-color: rgb(0, 0, 0);
+    height: 13mm;
+    width: 100%;
+    color: white;
+    font-family: poppins;
+    /* border-radius: 8mm; */
+    display: flex;
+    align-items: center;
+    padding-left: 1.5cm;
+    padding-right: 1.5cm;
+    justify-content: space-between;
+    box-shadow: 0 .1mm 10mm red;
+}
+
+.pno {
+    display: flex;
+    align-items: center;
+    font-size: 4mm;
+
+}
+
+.nlsi {
+    display: flex;
+    gap: 8mm;
+}
+
+.nrsi {
+    display: flex;
+    gap: 8mm;
+}
+
+.smicon {
+    cursor: no-drop;
+}
+
+.smicon1:active {
+    background-color: rgb(0, 174, 0);
+    border-radius: 2mm;
+    padding: 1mm;
+    /* padding-top: 2mm; */
+    padding-left: 1.7mm;
+}
+
+img:nth-child(2):active {
+    background-color: rgb(69, 69, 255);
+    border-radius: 2mm;
+    /* padding: 1mm; */
+    padding-left: 4mm;
+    padding-right: 1.5mm;
+    padding-top: 2mm;
+    height: 10mm;
+    /* margin-bottom: 2mm; */
+    margin-left: -4mm;
+    box-sizing: none;
+}
+
+img:nth-child(2):active~img:nth-child(3) {
+    margin-left: -1.5mm;
+}
+
+img:nth-child(3):active {
+    background-color: skyblue;
+    border-radius: 2mm;
+    /* padding: 1mm; */
+    padding-top: 1mm;
+    padding-right: 0.5mm;
+    /* padding-bottom: -1mm; */
+    padding-left: 1mm;
+    margin-left: -.5mm;
+}
+
+img:nth-child(4):active {
+    background-color: rgb(69, 69, 255);
+    border-radius: 2mm;
+    box-sizing: border-box;
+    height: 10mm;
+    padding: 1.5mm;
+    margin-left: -2mm;
+}
+
+img:nth-child(4) {
+    cursor: no-drop;
+    margin-top: 0.5mm;
+}
+
+img:nth-child(2) {
+    margin-top: 0.5mm;
+}
+
+.smicon:active {
+    box-sizing: border-box;
+}
+
+
+.stickydiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url(assets/Technical\ Background.jpg);
+    background-size: 100vw;
+    height: 20mm;
+    box-shadow: 0 .0001mm 5mm red;
+    position: sticky;
+    top: 0mm;
+    text-align: center;
+}
+
+.sdi a {
+    color: white;
+    font-family: poppins;
+}
+
+.stickydiv img {
+    margin-left: 5mm;
+}
+
+.sdi span {
+    color: white;
+    cursor: no-drop;
+    font-family: poppins;
+}
+
+.sdi {
+    display: flex;
+    align-items: center;
+    gap: .7cm;
+}
+
+.carticon {
+    margin-right: 6mm !important;
+    cursor: no-drop
+}
+
+.sdi a:active {
+    /* color: yellow; */
+    text-decoration-color: blue;
+}
+
+.sdi a:hover {
+    background-color: rgba(255, 251, 0, 0.269);
+    border-radius: 1mm;
+}
+
+.homediv {
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    height: 30cm;
+    background-image: url(assets/wall\ background.jpg);
+    background-size: 100vw;
+}
+
+.hdi h1 {
+
+    color: white;
+    font-size: 15mm;
+    font-weight: 350;
+    letter-spacing: 1mm;
+    max-width: 60vw;
+    margin-top: 2cm;
+    -webkit-text-stroke: red;
+    -webkit-text-stroke-width: 1px;
+
+}
+
+.hdi {
+    display: flex;
+    /* margin-top: 1cm; */
+    justify-content: center;
+    text-align: center;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+
+}
+
+.fd {
+    display: flex;
+    justify-content: center;
+    font-size: 7mm;
+    color: white;
+    text-align: center;
+    font-weight: 290;
+}
+
+.no {
+    text-decoration: underline;
+    cursor: no-drop;
+    font-weight: normal;
+    color: yellow;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    gap: 10mm;
+    margin-top: 10mm;
+}
+
+.b1 {
+    cursor: no-drop;
+    background-color: rgb(48, 148, 255);
+    border-radius: 10cm;
+    padding: 3mm 7mm;
+    padding-top: 3.5mm;
+    color: white;
+}
+
+.b2 {
+    cursor: no-drop;
+    border: .5mm solid white;
+    border-radius: 10cm;
+    padding: 3mm 7mm;
+    padding-top: 3.5mm;
+    color: white;
+}
+
+.rfd {
+    background-image: url(assets/Wavy_Background.png);
+    background-repeat: no-repeat;
+    margin-top: -17vh;
+    background-size: 100vw;
+    height: 100vh;
+}
+
+.rfdimg {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.message-icon,
+.phone-icon,
+.friends-icon {
+    margin-top: 16vh;
+}
+
+.support-icon {
+    margin-right: -10vh;
+}
+
+.rfdimg img {
+    height: 15vh;
+}
+
+.rfic {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    font-size: 3vh;
+    font-weight: 600;
+    margin-top: 6vh;
+}
+
+.rfici {
+    width: 13vw;
+}
+
+.fc {
+    font-family: sans-serif;
+    font-weight: 100;
+    font-style: italic;
+    color: gray;
+    font-size: 1vw;
+}
+
+.mt {
+    margin-top: -13vh;
+    margin-right: -9vh;
+}
+
+.mr {
+    margin-right: -15vh;
+}
+
+.thank {
+    font-size: 4cm;
+    font-family: dancing script;
+    font-weight: 500;
+}
+
+.last img {
+    width: 25cm;
+    margin-top: -9mm;
+    height: 8cm;
+}
+
+.chat {
+    position: fixed;
+    bottom: 3mm;
+    right: 2mm;
+    border-radius: 10cm;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: 1.2cm;
+    width: 4.3cm;
+    background-color: rgb(0, 200, 0);
+    gap: 1mm;
+}
+
+.chat:hover {
+    background-color: rgb(0, 150, 0);
+    transition: 0.5s;
+}

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q-2</title>
+    <style>
+        .container {
+            margin: auto;
+            border-radius: 10px;
+            box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.312);
+            width: 500px;
+            display: flex;
+            font-family: cursive;
+            justify-content: center;
+            flex-direction: column;
+            color: green;
+            margin-top: 20px;
+            align-items: center;
+            padding-bottom: 20px;
+        }
+
+        .temp-div {
+            padding: 10px;
+            margin: 10px;
+            cursor: pointer;
+            font-size: 20px;
+            color: blue;
+            width: fit-content;
+            border-radius: 5px;
+            transition: color .3s ease-in-out;
+        }
+
+        .temp-div:hover {
+            text-decoration: underline;
+            color: rgb(149, 0, 255);
+        }
+
+        input {
+            min-width: 300px;
+            height: 30px;
+            font-size: 20px;
+        }
+
+        .container button {
+            border: none;
+            font-size: 20px;
+            font-family: cursive;
+            color: white;
+            padding: 5px 20px;
+            background-color: green;
+            border-radius: 20px;
+        }
+
+        .sepration {
+            height: 5px;
+            margin-top: 50px;
+            background-color: rgba(0, 0, 0, 0.296);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Create a website which is capable of storing bookmarks of your favorite websites using href -->
+    <div class="adder">
+        <div class="container">
+            <h1>Enter href of website</h1>
+            <input type="text" placeholder="Enter link here...">
+            <br>
+            <button>Add</button>
+        </div>
+    </div>
+
+    <div onclick="location.href = 'Q-3.html'" class="sepration"></div>
+    <div class="temp-div-cont"></div>
+
+    <script>
+        function handleEvent() {
+            let input = document.querySelector(".container input");
+            const div = document.createElement("div");
+            if (input.value == "") {
+                alert("Input field is empty!");
+            }
+            else {
+                document.querySelector(".temp-div-cont").prepend(div);
+                div.className = "temp-div";
+                div.setAttribute("onclick", "jumper()");
+                div.textContent = input.value;
+                input.value = "";
+            }
+        }
+        alert("The bookmarks you will save is temporary!");
+        document.querySelector(".container button").addEventListener("click", handleEvent);
+        document.addEventListener("keydown", (e) => {
+            if (e.key == "Enter") {
+                handleEvent();
+            }
+
+        }
+        )
+
+        document.addEventListener("keydown", (e) => {
+            if (e.key == "z" && e.ctrlKey == true) {
+                document.getElementsByClassName("temp-div")[0].remove();
+            }
+        }
+        )
+
+        function jumper() {
+            let div = document.querySelectorAll(".temp-div").forEach((e) => {
+                if (!e.textContent.startsWith("https") || !e.textContent.startsWith("http")) {
+                    window.open(`https://${e.textContent}`, "_blank");
+                }
+                else {
+                    window.open(e.textContent, "_blank");
+                }
+            }
+            );
+        }
+    </script>
+</body>
+
+</html>

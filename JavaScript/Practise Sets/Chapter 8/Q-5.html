@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q-5</title>
+    <style>
+        .box{
+            height: 200px;
+            width: 200px;
+            background-color: yellow;
+            border-radius: 200px;
+            margin-left: 600px;
+            margin-top: 200px;
+        }
+        .btn{
+            border: none;
+            background-color: yellow;
+            color: red;
+            padding: 10px 20px;
+            border-radius: 20px;
+            margin-top: 50px;
+            margin-left: 650px;
+            cursor: pointer;
+            font-size: 20px;
+        }
+        .glowing-box{
+            box-shadow: 0px 0px 1000px 100px yellow;
+        }
+    </style>
+</head>
+<body bgcolor="black">
+    <!-- Create a glowing bulb effect using classlist toggle effect in javascript -->
+     <div class="box"></div>
+     <button onclick="glow()" class="btn">Toggle</button>
+
+
+     <script>
+        
+        function glow() {
+            document.querySelector(".box").classList.toggle("glowing-box")
+        }
+
+
+     </script>
+</body>
+</html>

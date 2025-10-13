@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q-1</title>
+    <style>
+        .btn{
+            padding: 10px 20px;
+            border: none;
+            background-color: skyblue;
+            color: rgb(58, 58, 58);
+            margin: 20px;
+            cursor: pointer;
+            font-family: cursive;
+            border-radius: 20px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Write a program to show different alerts when different buttons are clicked -->
+    <button class="btn" onclick="showAlert('smart')">I am smart</button>
+    <button class="btn" onclick="showAlert('intelligent')">I am intelligent</button>
+    <button class="btn" onclick="showAlert('handsome')">I am handsome</button>
+    <button class="btn" onclick="showAlert('beautiful')">I am beautiful</button>
+    <button class="btn" onclick="showAlert('cute')">I am cute</button>
+
+    <script>
+        function showAlert(character) {
+            alert("You are " + character);
+        }
+    </script>
+</body>
+
+</html>

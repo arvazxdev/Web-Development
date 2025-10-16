@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Try Catch & Error Handling</title>
+</head>
+
+<body>
+
+
+    <script>
+
+        let in1 = prompt("Enter first number");
+        let in2 = prompt("Enter second number");
+        let sum = parseInt(in1) + parseInt(in2);
+        if (isNaN(sum)) {
+            try {
+                throw SyntaxError("This is not a number");
+            } catch (error) {
+                console.log(error);
+            }
+
+        }
+        try {
+            // setTimeout(() => {
+                console.log(`The sum of these numbers is ${sum * x}`);
+            // }, 500);      Not allowed!
+        } catch (error) {
+            console.log(error);
+            setTimeout(() => {
+                console.log("Error comes, please handle it.")
+            }, 1000);
+
+        }
+        finally {
+            setTimeout(() => {
+                console.log("Error handled successfully")
+            }, 2000);
+
+        }
+
+
+    </script>
+</body>
+
+</html>

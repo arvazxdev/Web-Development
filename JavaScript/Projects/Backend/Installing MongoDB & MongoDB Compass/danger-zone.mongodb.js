@@ -1,0 +1,2 @@
+use("SigmaDatabase");
+db.dropDatabase();

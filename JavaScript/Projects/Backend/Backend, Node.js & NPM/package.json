@@ -1,0 +1,21 @@
+{
+  "name": "hello_world",
+  "version": "1.0.0",
+  "description": "this is my first code in backend javascript",
+  "main": "myserver.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "first",
+    "code"
+  ],
+  "author": "arvaz",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.2",
+    "slugify": "^1.6.6"
+  }
+}

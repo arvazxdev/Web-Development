@@ -1,0 +1,11 @@
+.div {
+  font-size: 30px;
+  margin: 20px;
+  display: flex;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}

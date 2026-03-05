@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color the Boxes Randomly</title>
+</head>
+<style>
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 200px;
+        border: 2px solid black;
+        width: 200px;
+        font-size: 50px;
+        font-weight: bold;
+    }
+
+    .bp {
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        height: 200px;
+        background-color: white;
+    }
+
+    button{
+        font-size: 30px;
+        font-family: cursive;
+        color: white;
+        border-radius: 100px;
+        background-color: rgba(0, 0, 255, 0.6);
+        padding: 10px 20px;
+        border: none;
+    }
+
+    button:hover{
+        background-color: rgba(0, 0, 255);
+        transition: background-color .5s;
+        cursor: pointer;
+    }
+
+    button:active{
+        color: blue;
+        background-color: white;
+        transition: none;
+    }
+
+</style>
+
+<body>
+    <div class="container">
+        <div class="box">Box 1</div>
+        <div class="box">Box 2</div>
+        <div class="box">Box 3</div>
+        <div class="box">Box 4</div>
+        <div class="box">Box 5</div>
+    </div>
+    <div class="bp"><button onclick="reload()">Reload</button></div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

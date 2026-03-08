@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dummy Data Generator</title>
+    <style>
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 90vh;
+            font-family: Arial, sans-serif;
+        }
+
+        #btn {
+            background: linear-gradient(135deg, #ff7eb3, #ff758c);
+            border: none;
+            padding: 12px 24px;
+            font-size: 25px;
+            font-weight: bold;
+            color: white;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+            box-shadow: 0 4px 10px rgba(255, 117, 140, 0.3);
+        }
+
+        #btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 15px rgba(255, 117, 140, 0.5);
+        }
+
+        #btn:active {
+            transform: scale(0.98);
+            box-shadow: 0 2px 5px rgba(255, 117, 140, 0.3);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <button id="btn">Generate Now</button>
+    </div>
+
+    <script>
+        document.getElementById('btn').addEventListener('click', function () {
+            fetch('/generate');
+        });
+    </script>
+</body>
+
+</html>

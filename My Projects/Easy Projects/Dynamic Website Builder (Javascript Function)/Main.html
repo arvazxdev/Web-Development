@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Website Builder</title>
+    <style>
+
+        @media only screen and (max-width: 500px) {
+            .card{
+                height: 270px !important;
+            }
+        }
+
+        * {
+            font-family: sans-serif;
+        }
+
+        .main {
+            display: flex;
+            align-items: center;
+            color: white;
+        }
+
+        .card {
+            background-color: rgb(28, 28, 28);
+            display: flex;
+            border-radius: 3px;
+            padding-top: 18px;
+            padding-left: 18px;
+            gap: 10px;
+            width: 1100px;
+            height: 140px;
+            margin: auto;
+        }
+
+        img {
+            border-radius: 7px;
+            height: 120px;
+        }
+
+        .duration {
+            border-radius: 5px;
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 3px 5px;
+            position: relative;
+            top: -30px;
+            /* Adjust this value to position vertically */
+            left: 165px;
+            /* Adjust this value to position horizontally */
+            font-size: 13px;
+            width: fit-content;
+            font-weight: 600;
+        }
+
+        .detail {
+            color: rgb(152, 152, 152);
+            font-size: 15px;
+            margin-top: 20px;
+        }
+
+        .title{
+            font-weight: 600;
+            font-size: 20px;
+        }
+
+        center{
+            margin: auto;
+            font-size: 30px;
+            color: white;
+            margin-top: 100px;
+            font-weight: 700;
+        }
+    </style>
+</head>
+
+<body bgcolor="#5C5C5D">
+
+    <div class="main">
+        <div class="card">
+            <div class="thumbnail">
+                <img alt="thumbnail">
+                <div class="duration"></div>
+            </div>
+            <div class="contents">
+                <div class="title"></div>
+                <div class="detail">
+                    <span class="channelName"></span>
+                    <span>°</span>
+                    <span class="views"></span>
+                    <span>°</span>
+                    <span class="ago"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+        <center>Zooming in or out will affect the content to appear properly</center>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

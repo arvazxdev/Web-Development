@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hacker's Terminal</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap');
+    </style>
+    <style>
+        body {
+            color: rgb(0, 180, 0);
+            background-color: black;
+            letter-spacing: 1px;
+            font-family: Inconsolata;
+        }
+
+        .container {
+            padding: 10px;
+            margin: 10px;
+        }
+
+        .content {
+            padding: 10px;
+            font-size: 20px;
+        }
+
+        .content5{
+            padding: 10px;
+            font-size: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="content content1"></div>
+        <div class="content content2"></div>
+        <div class="content content3"></div>
+        <div class="content content4"></div>
+        <div class="content5"></div>
+    </div>
+
+
+    <script>
+        function dotBlinker() {
+            setInterval(() => {
+                document.querySelectorAll(".content").forEach((e) => {
+                    {
+                        if (e.nextElementSibling.textContent.length < 2) {
+                            if (e.textContent.length > 2) {
+                            if (e.textContent.endsWith("..."))
+                                e.textContent = e.textContent.slice(0, -3);
+                            else {
+                                e.textContent += ".";
+                            }
+                        }
+                        }
+                        else{
+                            if (document.querySelector(".content1").nextElementSibling.textContent.length > 2) {
+                                document.querySelector(".content1").textContent = "Initialized Hacking!"
+                            }
+                            if (document.querySelector(".content2").nextElementSibling.textContent.length > 2) {
+                                document.querySelector(".content2").textContent = "Read your Files!"
+                            }
+                            if (document.querySelector(".content3").nextElementSibling.textContent.length > 2) {
+                                document.querySelector(".content3").textContent = "Sent all Passwords and Personal Files to Server!"
+                            }
+                            if (document.querySelector(".content4").nextElementSibling.textContent.length > 2) {
+                                document.querySelector(".content4").textContent = "Cleaned Up!"
+                            }
+                             
+                        }
+                        
+                    }
+
+                }
+                )
+            }, 500);
+        }
+
+        function random() {
+            let rand = Math.random();
+            let a;
+            if (rand < 0.2) {
+                a = 1000;
+            }
+            else if (rand < 0.4) {
+                a = 2000;
+            }
+            else if (rand < 0.6) {
+                a = 3000;
+            }
+            else if (rand < 0.8) {
+                a = 4000;
+            }
+
+            else {
+                a = 5000;
+            }
+
+            return a;
+        }
+
+        function getContent(data) {
+            return new Promise((resolve, reject) => {
+
+                setTimeout(() => {
+                    console.log(data);
+                    resolve("Succeed!")
+                }, random());
+
+            })
+        }
+        (async function () {
+            await getContent("Initializing Hacking...").then(() => {
+                document.querySelector(".content1").textContent = "Initializing Hacking"
+            }
+            );
+            await getContent("Reading your files").then(() => {
+                document.querySelector(".content2").textContent = "Reading your Files"
+            }
+            );
+            await getContent("Sending all Passwords and Personal Files to Server...").then(() => {
+                document.querySelector(".content3").textContent = "Sending all Passwords and Personal Files to Server"
+            }
+            );
+            await getContent("Cleaning Up...").then((res) => {
+                document.querySelector(".content4").textContent = "Cleaning Up"
+            }
+            );
+            await getContent("").then((res) => {
+                document.querySelector(".content5").textContent = res;
+            }
+            );
+        })();
+        dotBlinker();
+
+
+    </script>
+</body>
+
+</html>

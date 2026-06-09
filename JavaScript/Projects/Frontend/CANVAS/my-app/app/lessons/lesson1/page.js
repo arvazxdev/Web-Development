@@ -23,6 +23,7 @@ const Page = () => {
     canvas.height = rect.height * dpr;
 
     ctx.scale(dpr, dpr);
+    
 
 
     // SECION 1 - Rectangles
